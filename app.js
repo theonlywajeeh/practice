@@ -1,3 +1,20 @@
-var firstName = prompt("Enter your First name");
-var lastName = prompt("Enter your lastName");
-alert("YOU ARE GAY.");
+function displayTime(){
+    var dateTime = new Date();
+    var hrs = dateTime.getHours();
+    var min = dateTime.getMinutes();
+    var sec = dateTime.getSeconds();
+    var session = document.getElementById('session');
+
+    if(hrs >= 12){
+        sessions.innerHTML = "PM";
+    }else{
+        sessions.innerHTML = "AM";
+    }
+    if(hrs = hrs - 12);
+
+    document.getElementById('hours').innerHTML = hrs;
+    document.getElementById('minutes').innerHTML = min;
+    document.getElementById('seconds').innerHTML = sec;
+}
+
+setInterval(displayTime, 10);
